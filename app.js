@@ -261,16 +261,11 @@ Complete Exercise 15 in the space below:
 */
 
 let total = 0
-const allNumbers = [] 
 
 numArrays.forEach((numArray) => {
     numArray.forEach((number) => {
-        allNumbers.push(number)
+        total = total + number;
     })
 })
-
-for (let index = 0; index < allNumbers.length; index++) {
-    total = total + allNumbers[index];
-}
 
 console.log('Exercise 15 result:\n', total);
